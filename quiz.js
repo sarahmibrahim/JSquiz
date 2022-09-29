@@ -75,7 +75,7 @@ var q5 = document.getElementsByName('question5');
     document.getElementById("picture").src = "trophy.jpeg" 
 }
 window.onload = function (){
-    document.getElementById("start").style.display = "none";
+    document.getElementById("start").style.display = "block";
     document.getElementById("questionContainer1").style.display = "none";
     document.getElementById("questionContainer2").style.display = "none";
     document.getElementById("questionContainer3").style.display = "none";
