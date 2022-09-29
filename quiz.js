@@ -74,6 +74,15 @@ var q5 = document.getElementsByName('question5');
     document.getElementById("number_correct").innerHTML = "you got  " + correct +" /5 correct.";
     document.getElementById("picture").src = "trophy.jpeg" 
 }
+window.onload = function (){
+    document.getElementById("start").style.display = "none";
+    document.getElementById("questionContainer1").style.display = "none";
+    document.getElementById("questionContainer2").style.display = "none";
+    document.getElementById("questionContainer3").style.display = "none";
+    document.getElementById("questionContainer4").style.display = "none";
+    document.getElementById("questionContainer5").style.display = "none";
+
+}
 function startQuiz() {
     document.getElementById("start").style.display = "none";
     document.getElementById("questionContainer1").style.display = "block";
