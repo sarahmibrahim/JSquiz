@@ -1,0 +1,31 @@
+#quiz {
+  background-color: lightsteelblue;
+  background-size: cover;
+  margin-left: 10px;
+  padding: 0px 20px 20px 20px;
+  width: 50%;
+  margin-left: 25%;
+  justify-content: center;
+  border-radius: 20px;
+
+  font-family: "Courgette";
+  font-size: 25px;
+}
+#picture {
+  width: auto;
+  height: 150px;
+}
+
+h1 {
+  font-family: "Courgette";
+}
+
+#after_submit {
+  visibility: hidden;
+  float: top;
+}
+#button:hover {
+  background: red;
+  color: #000;
+  cursor: pointer;
+}

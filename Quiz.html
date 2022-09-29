@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+  <!--Custom css-->
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+    
+
+  <title>Quiz</title>
+</head>
+<body>
+  
+<h1 class="text-center">Sarah's Obscure Stuff Quiz </h1>
+<br>
+<div id="start" class="text-center">
+    <input type="button" value="Start Quiz"class="btn btn-danger text-center" onclick="startQuiz()"/>
+  </div>
+<br>
+
+<div id="quiz" name="quiz">
+  <!--question 1-->
+  <div id="questionContainer1" >
+    <br>
+    <p class="text-center">Q1) How many times did Louis Prima eat antipasta?</p>
+    <div id ="question1" class=" row justify-content-center">
+      <input type = "radio" name = "question1" id = "q1" value = Once> Once
+      <br>
+      <input type = "radio" name = "question1" id = "q1" value = Twice> Twice
+      <br>
+      <input type = "radio" name = "question1" id = "q1" value = Thrice> Thrice
+    </div> 
+    <br>
+    <button onclick= "question2()" class="btn btn-info">Next</button>
+  </div>
+
+  <div id="questionContainer2">
+    <br>
+    <!--question 2 -->
+    <p class="text-center">Q2) In Texas it is illegal to put what on your neighbours cow?</p>
+  <div id ="question2"class=" row justify-content-center">
+    <input type = "radio" name = "question2" id="q2" value = Clothes> Clothes
+    <br>
+    <input type = "radio" name = "question2" id="q2" value = Hat> A hat
+    <br>
+    <input type = "radio" name = "question2" id="q2" value = Grafitti> Grafitti
+  </div>
+  <br>
+  <button onclick= "question3()" class="btn btn-info">Next</button>
+</div>
+<div id="questionContainer3">
+  <br>
+  <!--question3-->
+  <p class="text-center">Q3) What is the national sport of Canada? </p>
+  <div id ="question3"class=" row justify-content-center">
+    <input type = "radio" name = "question3" id="q3" value = Hockey> Hockey
+    <br>
+    <input type = "radio" name = "question3" id="q3" value = Curling> Curling
+    <br>
+    <input type = "radio" name = "question3" id="q3" value = Lacrosse> Lacrosse
+  </div>
+  <br>
+  <button onclick= "question4()" class="btn btn-info">Next</button>
+</div>
+  
+<div id="questionContainer4">
+
+  <br>
+  <p class="text-center">Q4) ) If you dug a hole through the center of the Earth in New Zealand, in which European country would you emerge? </p>
+  <div id ="question4"class=" row justify-content-center">
+    <input type = "radio" name = "question4" id="q4" value = UK> UK
+    <br>
+    <input type = "radio" name = "question4" id="q4" value = Spain> Spain
+    <br>
+    <input type = "radio" name = "question4" id="q4" value = France> France
+  </div>
+  <button onclick= "question5()" class="btn btn-info">Next</button>
+  <br>
+</div>
+
+<div id="questionContainer5">  
+  <br>
+  <p class="text-center">Q5) What is the collective noun for unicorns? </p>
+  <div id ="question5"class=" row justify-content-center">
+    <input type = "radio" name = "question5" id="q5" value = Blessing> Blessing
+    <br>
+    <input type = "radio" name = "question5" id="q5" value = Prayer> Prayer
+    <br>
+    <input type = "radio" name = "question5" id="q5" value = Illusion> Illusion
+  </div>
+  
+  <div class=" row justify-content-center">
+    
+    <div id="after_submit">
+      <p id="number_correct"></p>
+      <img id="picture" src="trophy.jpeg">
+    </div>
+    
+  </div>
+  
+  <input id="button" type="button" value="Finished"class="btn btn-info" onclick="finish();"/></div>
+  <script src="quiz.js"></script>
+</body>
+</html>
